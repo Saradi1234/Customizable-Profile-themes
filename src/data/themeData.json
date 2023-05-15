@@ -1,0 +1,30 @@
+[
+    {
+        "id": "001",
+        "name": "Light",
+        "bgColor": "linear-gradient(239.26deg, #DDEEED 63.17%, #FDF1E0 94.92%)",
+        "bubbleColor": "#fff",
+        "textColor": "#000"
+    },
+    {
+        "id": "002",
+        "name": "Dark",
+        "bgColor": "linear-gradient(239.26deg, #ccc, #333 94.92%)",
+        "bubbleColor": "#555",
+        "textColor": "#e9e9e9"
+    },
+    {
+        "id": "003",
+        "name": "Nature",
+        "bgColor": "linear-gradient(239.26deg, yellow 63.17%, green 94.92%)",
+        "bubbleColor": "green",
+        "textColor": "white"
+    },
+    {
+        "id": "004",
+        "name": "Love",
+        "bgColor": "linear-gradient(239.26deg, pink 63.17%, red 94.92%)",
+        "bubbleColor": "pink",
+        "textColor": "white"
+    }
+]

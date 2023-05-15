@@ -1,0 +1,26 @@
+[
+    {
+        "id": "BOT001",
+        "name": "Bot",
+        "time": "20:48|28/10/97",
+        "message": "Hi there! 👋"
+    },
+    {
+        "id": "BOT002",
+        "name": "Bot",
+        "time": "20:50|28/10/97",
+        "message": "I'm Wysa - an AI chatbox built by therapists."
+    },
+    {
+        "id": "BOT003",
+        "name": "Bot",
+        "time": "20:55|28/10/97",
+        "message": "I'm here to understand your concerns and connect you with the best resources available to support you."
+    },
+    {
+        "id": "BOT004",
+        "name": "Bot",
+        "time": "20:59|28/10/97",
+        "message": "Can I help?"
+    }
+]
