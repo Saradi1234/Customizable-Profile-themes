@@ -11,25 +11,28 @@ const Chatbox = () => {
   const inputRef = useRef(null)
 
   const showBotMessages = () => {
-      chatData.map((chat, i) => {
-        const lastChat = chatData.length === i + 1
-        setTimeout(() => {
-          const JSX = <div
-            key={chat.id}
-            className={`bubble chat ${lastChat ? 'lastChat' : ''} ${theme}`}
-            style={{}}
-          >
-            {chat.message}
-          </div>
-          setBotMessagesJSX(prev => [...prev, JSX])
-        }, 1000 * (i + 1))
-      })
+    chatData.forEach((chat, i) => {
+
+      const lastChat = chatData.length === i + 1
+      setTimeout(() => {
+        const JSX = <div
+          key={chat.id}
+          className={`bubble chat ${lastChat ? 'lastChat' : ''} ${theme}`}
+          style={{}}
+        >
+          {chat.message}
+        </div>
+        setBotMessagesJSX(prev => [...prev, JSX])
+      }, 1000 * (i + 1))
+
+    })
+
   }
-  
+
   const handleOnEnter = (e) => {
     if (e.key === "Enter") handleSendMessage()
   }
-  
+
   const handleSendMessage = () => {
     const replyMsg = inputRef.current.value
 
@@ -57,11 +60,13 @@ const Chatbox = () => {
     });
   }, [theme])
 
+
   useEffect(() => {
     const prevSetTheme = localStorage.getItem('theme')
     setTheme(prevSetTheme)
     setBotMessagesJSX([])
     showBotMessages()
+      // eslint-disable-next-line
   }, [])
 
 
